@@ -37,13 +37,15 @@ input#average_kwh:focus{
 input:disabled{
     -webkit-opacity:1;
 }
-input[type="button"]{
-    /* display: none; */
-    /* Display none is not working in IOS Safari */
-    height: 0;
-    width: 0;
-    position: absolute;
-    left: -500px;
+@media only screen and (max-width: 600px), (orientation: landscape){
+    input[type="button"]{
+        /* display: none; */
+        /* Display none is not working in IOS Safari */
+        height: 0;
+        width: 0;
+        position: absolute;
+        left: -500px;
+    }
 }
 label{
     width: 30%;
