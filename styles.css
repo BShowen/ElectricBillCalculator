@@ -3,6 +3,8 @@
     color: #4a4a4a;
 }
 h1{
+    position: fixed;
+    width: 100%;
     font-weight: 600;
     background-color:#00a6dd;
     color: #24213d;
@@ -12,6 +14,8 @@ h1{
     padding-top: 1.5rem;
 }
 form{
+    position: relative;
+    top: 5.5rem;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -37,7 +41,7 @@ input#average_kwh:focus{
 input:disabled{
     -webkit-opacity:1;
 }
-@media only screen and (max-width: 600px), (orientation: landscape){
+@media only screen and (max-width: 750px)/*, (orientation: landscape)*/{
     input[type="button"]{
         /* display: none; */
         /* Display none is not working in IOS Safari */
@@ -82,6 +86,7 @@ label{
         font-size: 3rem;
     }
     form{
+        top: 10rem;
         margin: 0 auto;
         width: 30rem;
     }
